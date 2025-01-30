@@ -96,8 +96,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-    if st.button("Groq fiók regisztráció"):
-        webbrowser.open_new_tab("https://console.groq.com/keys")
+    st.link_button("Groq fiók regisztráció", "https://console.groq.com/keys")
 
     st.write("Kérlek vedd figyelembe, hogy ez egy minimalista fejlesztés. A fejlesztés csak tesztelési célokat szolgál. ")
     st.write("""
